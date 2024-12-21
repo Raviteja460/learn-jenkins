@@ -35,16 +35,16 @@ pipeline {
                 echo 'Testing..'
             }
         }
-        stage('Deploy') {
-            steps {
-                sh """
-                    echo  "Here I wrote shell script"
-                    cd /tmp
-                    touch sample
-                    #sleep 10
-                """
-            }
-        }
+        // stage('Deploy') {
+        //     steps {
+        //         sh """
+        //             echo  "Here I wrote shell script"
+        //             cd /tmp
+        //             touch sample
+        //             #sleep 10
+        //         """
+        //     }
+        // }
         // stage('check params'){
         //     steps{
         //         sh """
