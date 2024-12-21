@@ -4,9 +4,9 @@ pipeline {
     //         label 'AGENT-1'
     //     }
     // }
-    environment { 
-        GREETING = 'Hello Jenkins'
-    }
+    // environment { 
+    //     GREETING = 'Hello Jenkins'
+    // }
     options {
         timeout(time: 1, unit: 'HOURS')
         disableConcurrentBuilds()
@@ -40,7 +40,6 @@ pipeline {
                     echo  "Here I wrote shell script"
                     cd /tmp
                     touch sample
-                    echo "$GREETING"
                     #sleep 10
                 """
             }
