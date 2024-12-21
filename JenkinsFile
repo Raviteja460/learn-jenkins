@@ -41,6 +41,7 @@ pipeline {
                     echo  "Here I wrote shell script"
                     cd /tmp
                     touch sample
+                    mkdir folder-1
                     #sleep 10
                 """
             }
